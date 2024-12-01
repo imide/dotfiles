@@ -1,0 +1,26 @@
+# exports
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export EDITOR="micro"
+export MICRO_TRUECOLOR="1"
+export GIT_EDITOR='nvim'
+
+# paths
+
+# nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+ . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# end nix
+
+# if you're on mac, you should have this
+if [[ -f "/opt/homebrew/bin/brew" ]] then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Set the directory we want to store zinit and plugins
+export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+
+# environment
+

@@ -1,0 +1,26 @@
+# File management
+alias rcp="rsync -rahP --mkpath --modify-window=1" # Rsync copy keeping all attributes,timestamps,permissions'
+alias rmv="rsync -rahP --mkpath --modify-window=1 --remove-sent-files" # Rsync move keeping all attributes,timestamps,permissions
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias wget='wget -c '
+
+# Navigation shortcuts
+alias home="cd ~"
+alias dots="cd $DOTS_DIR"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+# Colorize output
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# misc
+alias usage='du -ah -d1 | sort -rn 2>/dev/null'
+
