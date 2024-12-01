@@ -16,9 +16,6 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Add in spaceship
-zinit light spaceship-prompt/spaceship-prompt
-
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -76,3 +73,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color $realpath'
 
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
+
+# starship
+eval "$(starship init zsh)"
