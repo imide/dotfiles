@@ -39,6 +39,9 @@ zinit snippet OMZP::aws
 zinit snippet OMZP::docker
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::direnv
+zinit snippet OMZP::colorize
+zinit snippet OMZP::node
+zinit snippet OMZP::npm
 
 # Load completions
 autoload -Uz compinit && compinit
