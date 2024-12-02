@@ -29,9 +29,18 @@ zinit light chisui/zsh-nix-shell
 zinit light z-shell/zsh-eza
 zinit light ntnyq/omz-plugin-pnpm
 zinit light MenkeTechnologies/zsh-cargo-completion
+zinit light unixorn/1password-op.plugin.zsh
+
+# macos specifics
+
+if [ "$(uname)" = 'Darwin ']; then
+	zinit light eventi/noreallyjustfuckingstopalready
+	
+	zinit snippet OMZP::brew
+	zinit snippet OMZP::osx
+fi
 
 # Add in snippets
-zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::ubuntu
