@@ -33,11 +33,11 @@ zinit light unixorn/1password-op.plugin.zsh
 
 # macos specifics
 
-if [ "$(uname)" = 'Darwin ']; then
+if [ "$(uname)" = 'Darwin' ]; then
 	zinit light eventi/noreallyjustfuckingstopalready
 	
 	zinit snippet OMZP::brew
-	zinit snippet OMZP::osx
+	zinit snippet OMZP::macos
 fi
 
 # Add in snippets
